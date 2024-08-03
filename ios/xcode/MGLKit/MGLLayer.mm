@@ -467,7 +467,10 @@ GLint LinkProgram(GLuint program)
         return NO;
     }
 
-    [self checkLayerSize];
+   
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [self checkLayerSize];
+    });
 
     return YES;
 }

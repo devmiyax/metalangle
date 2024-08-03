@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXAggregateTarget section */
@@ -5062,6 +5062,7 @@
 		0AF959ED244C7FF800F59740 /* Info_tvos.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = Info_tvos.plist; path = samples/Info_tvos.plist; sourceTree = "<group>"; };
 		0AFFDCB424D42F760015E16A /* ImageMtl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ImageMtl.h; path = ../../src/libANGLE/renderer/metal/ImageMtl.h; sourceTree = "<group>"; };
 		0AFFDCB524D42F760015E16A /* ImageMtl.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = ImageMtl.mm; path = ../../src/libANGLE/renderer/metal/ImageMtl.mm; sourceTree = "<group>"; };
+		941D603B2BCAA98300E39805 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -5627,6 +5628,7 @@
 		0A60524923464F51005CEA98 = {
 			isa = PBXGroup;
 			children = (
+				941D603B2BCAA98300E39805 /* PrivacyInfo.xcprivacy */,
 				0AAF40842354BD80000E3CC8 /* MGLKit */,
 				0A97E5A8234878F0007CA616 /* gen */,
 				0AA201032347456300E0B98C /* third_party */,
@@ -14969,6 +14971,7 @@
 		0AA2FFA92347260000E0B98C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -15009,6 +15012,7 @@
 		0AA2FFAA2347260000E0B98C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;

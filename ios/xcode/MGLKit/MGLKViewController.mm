@@ -205,8 +205,9 @@
     CFTimeInterval now   = CACurrentMediaTime();
     _timeSinceLastUpdate = now - _lastUpdateTime;
 
-    [self update];
-    [_glView display];
+    if( [self update] == YES ){
+        [_glView display];
+    }
 
     if (_needDisableVsync)
     {
@@ -230,12 +231,13 @@
 #endif
 }
 
-- (void)update
+- (BOOL)update
 {
     if (_delegate)
     {
         [_delegate mglkViewControllerUpdate:self];
     }
+    return YES;
 }
 
 @end
